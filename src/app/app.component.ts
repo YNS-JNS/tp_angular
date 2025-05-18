@@ -1,12 +1,28 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'tp5';
+
+  user: string[] = ['Said', 'Soukaina', 'Abdelkabir','Mouad']; 
+
+
+  supprimer(){
+    this.user.pop(); 
+  }
+
+  vider(){
+    this.user = []; 
+  }
+
+  ajouter(nom: string){
+    this.user.push(nom); 
+  }
+
+
 }
