@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  user: string[] = ['Said', 'Soukaina', 'Abdelkabir','Mouad']; 
+  users: string[] = ['Said', 'Soukaina', 'Abdelkabir','Mouad']; 
 
 
   supprimer(){
